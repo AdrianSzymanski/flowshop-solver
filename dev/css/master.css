@@ -1,0 +1,154 @@
+html, body { background: #fff; font-family: "Roboto", Arial, sans-serif; font-size: 14px; color: #3e3e3e; }
+a, a:hover, a:focus { text-decoration: none; color: inherit; }
+button { transition: all 0.25s ease; cursor: pointer; opacity: 0.9; }
+button:hover { opacity: 1; }
+
+.wrapper { margin-bottom: 30px; }
+.wrapper .content { position: relative; border: 1px solid #e7e9e8; border-top: 0; }
+.wrapper .content:before,
+.wrapper .content:after { position: absolute; z-index: 2; bottom: -1px; right: -1px; background: #3ad5b6; content: ""; }
+.wrapper .content:before { width: 15px; height: 2px; }
+.wrapper .content:after { width: 2px; height: 15px; }
+
+.info { position: relative; background: #e7e9e8; background: radial-gradient(circle farthest-side at 50% 0, #f1f1f1, #e7e9e8); padding: 15px 15px 13px; font-size: 12px; text-transform: uppercase; font-weight: 700; }
+.info:before,
+.info:after { position: absolute; left: -1px; top: 0; background: #3ad5b6; content: ""; }
+.info:before { width: 15px; height: 2px; }
+.info:after { width: 2px; height: 15px; }
+.info.link { transition: all 0.25s ease; cursor: pointer; }
+.info.link:hover { padding-left: 25px; }
+.subinfo { background: #e7e9e8; background: radial-gradient(circle farthest-side at 50% 0, #f1f1f1, #e7e9e8); padding: 8px 15px 5px; font-size: 12px; text-transform: uppercase; font-weight: 700; }
+
+
+
+
+
+.wrapper.navigation-wrapper { position: fixed; z-index: 5; width: 100%; box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35); }
+.wrapper.navigation-wrapper:before { position: absolute; top: 0; left: 0; z-index: 4; opacity: 0.90; width: 100%; height: 50px; background: #e7e9e8; background: radial-gradient(circle farthest-side at 50% 0, #f1f1f1, #e7e9e8); content: ""; }
+.wrapper.navigation-wrapper .title { position: relative; z-index: 6; font-size: 18px; color: #3ad5b6; text-transform: uppercase; font-weight: 700; white-space: nowrap; padding-top: 13px; }
+.wrapper.navigation-wrapper .buttons { position: relative; z-index: 6; text-align: right; font-size: 0; }
+.wrapper.navigation-wrapper .buttons button { outline: none; border: 0; border-radius: 0; height: 50px; padding: 0 15px; background: transparent; font-size: 13px; color: #1e1e1e; text-transform: uppercase; font-weight: 700; }
+.wrapper.navigation-wrapper .buttons button:hover { color: #fff; text-shadow: 0 0 1px #3e3e3e; }
+.wrapper.navigation-wrapper .buttons button:nth-child(1):hover { background: #888; }
+.wrapper.navigation-wrapper .buttons button:nth-child(2):hover { background: #888; }
+.wrapper.navigation-wrapper .buttons button:nth-child(3):hover { background: #3ad5b6; }
+.wrapper.navigation-wrapper .buttons button:nth-child(4):hover { background: #e74c3c; }
+.wrapper.navigation-wrapper .buttons button:nth-child(5):hover { background: #3498db; }
+.wrapper.navigation-wrapper .buttons button:disabled {  }
+.wrapper.navigation-wrapper .buttons button:disabled:hover { background: transparent; color: #1e1e1e; text-shadow: none; }
+
+.navigation-wrapper-fix { height: 50px; margin-bottom: 15px; }
+
+
+.wrapper.about-wrapper .text { padding: 15px; font-size: 11px; line-height: 30px; }
+.wrapper.about-wrapper .text .button { display: inline-block; margin: 0 1px; border: 1px solid #ddd; padding: 0 14px; height: 30px; line-height: 30px; background: #e7e9e8; font-size: 13px; color: #1e1e1e; font-weight: 700; text-transform: uppercase; }
+.wrapper.about-wrapper .text .box { display: inline-block; vertical-align: middle; width: 30px; height: 30px; margin: 0 1px; border: 1px solid #e5e5e5; }
+.wrapper.about-wrapper .text b { font-size: 14px; }
+.wrapper.about-wrapper .glyphicon { position: absolute; top: 0; right: 0; padding: 16px 15px 17px; color: #808080; cursor: pointer; }
+.wrapper.about-wrapper .glyphicon:hover { color: #3e3e3e; }
+
+
+.wrapper.top-wrapper {  }
+.wrapper.top-wrapper .machines,
+.wrapper.top-wrapper .jobs { line-height: 30px; padding: 10px 15px; font-weight: 500; }
+.wrapper.top-wrapper .number { transition: all 0.25s ease; display: inline-block; width: 30px; height: 30px; margin-left: 10px; border: 1px solid #e5e5e5; text-align: center; font-weight: 700; cursor: pointer; }
+.wrapper.top-wrapper .number:hover { border-color: #3ad5b6; }
+.wrapper.top-wrapper .number.active { border-color: #3ad5b6; box-shadow: 0 0 4px #3ad5b6 inset; }
+
+
+.wrapper.table-wrapper {  }
+.wrapper.table-wrapper table { cursor: pointer; margin: 0; }
+.wrapper.table-wrapper table tr th { transition: all 0.25s ease; vertical-align: middle; background: #f9f9f9; text-align: center; }
+.wrapper.table-wrapper table tr td { transition: all 0.25s ease; vertical-align: middle; text-align: center; }
+
+.wrapper.table-wrapper table thead {  }
+.wrapper.table-wrapper table thead tr {  }
+.wrapper.table-wrapper table thead tr th {  }
+
+.wrapper.table-wrapper table tbody {  }
+.wrapper.table-wrapper table tbody tr {  }
+.wrapper.table-wrapper table tbody tr th { padding: 4px 5px; width: 60px; }
+.wrapper.table-wrapper table tbody tr td { padding: 4px 5px; }
+
+.wrapper.table-wrapper table tr th:hover,
+.wrapper.table-wrapper table tr th.active { background: #f1f1f1; background: rgba(58, 213, 182, 0.35); }
+.wrapper.table-wrapper table tbody tr td:hover,
+.wrapper.table-wrapper table tbody tr td.active { background: #f1f1f1; background: rgba(58, 213, 182, 0.25); }
+
+.wrapper.table-wrapper.compare table { cursor: default; }
+.wrapper.table-wrapper.compare table tr th:first-child { width: 15%; }
+.wrapper.table-wrapper.compare table tr th:hover,
+.wrapper.table-wrapper.compare table tr th.active { background: #f9f9f9; }
+.wrapper.table-wrapper.compare table tbody tr td:hover,
+.wrapper.table-wrapper.compare table tbody tr td.active { background: #fff; }
+
+
+.wrapper.algorithm-wrapper {  }
+.wrapper.algorithm-wrapper .algorithms {  }
+.wrapper.algorithm-wrapper .algorithms .algorithm { transition: all 0.25s ease; padding: 9px 15px 7px; margin: 0; cursor: pointer; font-weight: 500; text-align: center; }
+.wrapper.algorithm-wrapper .algorithms .algorithm.active { background: rgba(58, 213, 182, 0.25); }
+.wrapper.algorithm-wrapper .algorithms .bordered-bottom .algorithm { border-bottom: 1px solid #f1f1f1; }
+.wrapper.algorithm-wrapper .algorithms .bordered-right .algorithm { border-right: 1px solid #f1f1f1; }
+
+
+.wrapper.gantt-wrapper {  }
+.wrapper.gantt-wrapper .chart-wrapper { margin-top: 15px; padding: 0 25px 15px 25px; overflow: hidden; }
+.wrapper.gantt-wrapper .chart-wrapper .machine { background: transparent; position: relative; z-index: 2; height: 45px; margin-top: 15px; border-width: 0 0 1px 1px; border-style: solid; border-color: #808080; }
+.wrapper.gantt-wrapper .chart-wrapper .machine:before { position: absolute; top: 0; left: 0; width: 5px; height: 1px; background: #808080; content: ""; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .machine-number { position: absolute; bottom: 6px; left: -25px; width: 20px; text-align: right; font-size: 14px; font-weight: 700; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job { transition: all 0.25s ease; position: absolute; bottom: 0; height: 35px; padding-top: 10px; text-align: center; font-size: 12px; color: #fff; font-weight: 700; text-shadow: 0 0 1px #3e3e3e; cursor: default; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job .pin { transition: all 0.5s ease 0.5s; position: absolute; top: -19px; width: 16px; height: 15px; border-radius: 5px; padding-right: 1px; background: #000; font-size: 10px; color: #fff; font-weight: 400; line-height: 16px; letter-spacing: -1px; text-align: center; text-shadow: none; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job .pin:after { position: absolute; width: 0; height: 0; top: 14px; left: 2px; background: transparent; border-style: solid; border-width: 5px 6px 0 6px; border-color: #000 transparent transparent transparent; content: ""; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job .pin.start { opacity: 0; left: -8px; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job .pin.finish { opacity: 0; right: -8px; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job:hover { opacity: 0.85; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job:hover .pin.start { opacity: 1; }
+.wrapper.gantt-wrapper .chart-wrapper .machine .job:hover .pin.finish { opacity: 1; }
+.wrapper.gantt-wrapper .chart-wrapper .axis { position: relative; width: 100%; height: 21px; margin-top: 30px; border-top: 1px solid #808080; font-size: 10px; font-weight: 500; }
+.wrapper.gantt-wrapper .chart-wrapper .axis span { transition: all 0.25s ease; position: absolute; bottom: 3px; }
+.wrapper.gantt-wrapper .chart-wrapper .axis span:before { position: absolute; top: -6px; left: 0; width: 1px; height: 5px; background: #808080; content: ""; }
+.wrapper.gantt-wrapper .chart-wrapper .axis span:after { position: absolute; bottom: 20px; left: 0; width: 1px; height: 630px; background: #f1f1f1; content: ""; }
+.wrapper.gantt-wrapper .chart-wrapper .axis span:first-of-type:after,
+.wrapper.gantt-wrapper .chart-wrapper .axis span:last-of-type:after { display: none; }
+
+
+.wrapper.footer-wrapper {  }
+.wrapper.footer-wrapper .cpr,
+.wrapper.footer-wrapper .tested-on { font-size: 10px; color: #808080; text-transform: uppercase; }
+.wrapper.footer-wrapper .tested-on { text-align: right; }
+
+
+
+
+
+@media (max-width: 1199px) {
+	
+}
+@media (max-width: 992px) {
+	.wrapper.gantt-wrapper .chart-wrapper .axis span:nth-of-type(2n) { display: none; }
+}
+@media (max-width: 767px) {
+	.wrapper.navigation-wrapper:before { height: 98px; opacity: 1; }
+	.wrapper.navigation-wrapper .title { text-align: center; margin-bottom: 10px; }
+	.wrapper.navigation-wrapper .buttons { text-align: center; }
+	.navigation-wrapper-fix { height: 98px; }
+
+	.table-responsive { margin-bottom: 0; }
+
+	.wrapper.algorithm-wrapper .algorithms .algorithm { text-align: left; border-bottom: 1px solid #f1f1f1; }
+	.wrapper.algorithm-wrapper .algorithms .bordered-right .algorithm { border-right: 0; }
+
+	.wrapper.footer-wrapper .tested-on { text-align: left; }
+}
+@media (max-width: 700px) {
+	
+}
+@media (max-width: 500px) {
+	
+}
+@media (max-width: 400px) {
+	.wrapper.navigation-wrapper:before { height: 76px; }
+	.wrapper.navigation-wrapper .title { font-size: 13px; }
+	.wrapper.navigation-wrapper .buttons button { height: 35px; padding: 0 10px; }
+	.navigation-wrapper-fix { height: 76px; }
+}
